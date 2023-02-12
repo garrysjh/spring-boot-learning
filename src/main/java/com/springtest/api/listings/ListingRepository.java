@@ -1,4 +1,4 @@
-package com.springtest.api;
+package com.springtest.api.listings;
 
 import com.springtest.models.Listing;
 import org.springframework.data.mongodb.repository.MongoRepository;

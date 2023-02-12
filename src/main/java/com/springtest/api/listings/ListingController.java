@@ -1,4 +1,4 @@
-package com.springtest.api;
+package com.springtest.api.listings;
 
 
 import com.springtest.models.Listing;
@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/listings")
+@RequestMapping("/listings")
 public class ListingController {
 
     private final ListingService listingService;
-    @GetMapping
+    @GetMapping("/listings")
     public List<Listing> fetchAllListings(){
         return listingService.getAllListings();
     }
